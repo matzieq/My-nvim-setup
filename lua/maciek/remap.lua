@@ -1,7 +1,17 @@
+--[[vim.cmd(
+    [[
+        
+ function CenterPane()
+   lefta vnew
+   wincmd w
+   exec 'vertical resize '. string(&columns * 0.75)
+ endfunction
+    ]]
+--)
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-
+--vim.keymap.set("n", "<leader>cl", vim.cmd(':call CenterPane()'))
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -18,6 +28,7 @@ end)
 vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
+vim.keymap.set("n", "<leader>cp", "<cmd>Centerpad<CR>")
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
