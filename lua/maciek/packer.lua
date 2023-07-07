@@ -44,4 +44,12 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+    use {
+        'stevearc/oil.nvim',
+        config = function() require('oil').setup() end
+    }
+    use {
+        'feline-nvim/feline.nvim',
+        config = function() require('feline').setup() end
+    }
 end)
