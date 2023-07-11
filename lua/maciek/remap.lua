@@ -55,9 +55,11 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/maciek/packer.lua<CR>");
-vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-vim.keymap.set("n", "<leader>ol", "<cmd>Oil<CR>");
+vim.keymap.set("n", "<leader>ol", "<cmd>Oil<CR>")
+vim.keymap.set("n", "<leader>tn", "<cmd>:set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>")
+vim.keymap.set("n", "<leader>tj", "<cmd>:set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>")
+
