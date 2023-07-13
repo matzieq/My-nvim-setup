@@ -62,4 +62,4 @@ end)
 vim.keymap.set("n", "<leader>ol", "<cmd>Oil<CR>")
 vim.keymap.set("n", "<leader>tn", "<cmd>:set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>")
 vim.keymap.set("n", "<leader>tj", "<cmd>:set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>")
-
+vim.keymap.set('n', "<leader>gb", "<cmd>:GitBlameToggle<CR>")

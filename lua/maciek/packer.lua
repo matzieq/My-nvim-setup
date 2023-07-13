@@ -53,4 +53,6 @@ return require('packer').startup(function(use)
         config = function() require('feline').setup() end
     }
     use 'nvim-tree/nvim-web-devicons'
+    use 'f-person/git-blame.nvim'
+
 end)
