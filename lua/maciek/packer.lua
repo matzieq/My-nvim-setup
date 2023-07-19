@@ -54,5 +54,5 @@ return require('packer').startup(function(use)
     }
     use 'nvim-tree/nvim-web-devicons'
     use 'f-person/git-blame.nvim'
-
+    use 'mfussenegger/nvim-dap'
 end)

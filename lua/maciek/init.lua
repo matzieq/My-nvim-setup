@@ -8,3 +8,4 @@ vim.api.nvim_create_autocmd('BufWritePre', {
   command = 'silent! EslintFixAll',
   group = vim.api.nvim_create_augroup('MyAutocmdsJavaScripFormatting', {}),
 })
+vim.cmd([[let g:gitblame_enabled = 0]])
