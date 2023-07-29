@@ -64,3 +64,7 @@ vim.keymap.set("n", "<leader>tn", "<cmd>:set expandtab tabstop=4 shiftwidth=4 so
 vim.keymap.set("n", "<leader>tj", "<cmd>:set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>")
 vim.keymap.set('n', "<leader>gb", "<cmd>:GitBlameToggle<CR>")
 vim.keymap.set('n', "<leader>tt", "<cmd>:terminal<CR>")
+vim.keymap.set('n', "<C-J>", "<C-W><C-J>")
+vim.keymap.set('n', "<C-K>", "<C-W><C-K>")
+vim.keymap.set('n', "<C-L>", "<C-W><C-L>")
+vim.keymap.set('n', "<C-H>", "<C-W><C-H>")
