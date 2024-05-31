@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim', tag = '0.1.4444',
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
@@ -55,4 +55,7 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'f-person/git-blame.nvim'
     use 'mfussenegger/nvim-dap'
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
+    use 'caglartoklu/borlandp.vim'
+    use 'simrat39/rust-tools.nvim'
 end)
